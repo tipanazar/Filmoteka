@@ -1,19 +1,19 @@
 {
-  "name": "filmoteka-js",
+  "name": "filmoteka",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://webstudioflip.github.io/WebStudioFlip",
+  "homepage": "https://tipanazar.github.io/filmoteka/",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /filmoteka-js/"
+    "build": "parcel build src/*.html --public-url /filmoteka/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WebStudioFlip/filmoteka-js.git"
+    "url": "git+https://github.com/tipanazar/Filmoteka"
   },
   "keywords": [],
-  "author": "Yevhen Pedchenko <pedchenko.yevhen@gmail.com>",
+  "author": "Filmoteka <pedchenko.yevhen@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/WebStudioFlip/filmoteka-js/issues"
