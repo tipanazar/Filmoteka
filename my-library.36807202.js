@@ -25,4 +25,4 @@ var t;!function(e,n){"object"==typeof exports&&"object"==typeof module?module.ex
 },{"./themoviedbAPI":"rUOr","../templates/library-gallery-elements.hbs":"UqCA","../templates/modal-movie-card.hbs":"Z6VX","tui-pagination":"jPMh","tui-pagination/dist/tui-pagination.css":"UYQs"}],"bcKP":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/scrollUpBtn"),require("./js/buildLibrary");
 },{"./sass/main.scss":"clu1","./js/scrollUpBtn":"oBLV","./js/buildLibrary":"DDZk"}]},{},["bcKP"], null)
-//# sourceMappingURL=/filmoteka-js/my-library.dca8f8c0.js.map
+//# sourceMappingURL=/filmoteka/my-library.36807202.js.map
