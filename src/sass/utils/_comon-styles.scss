@@ -1,0 +1,75 @@
+html {
+  height: auto;  
+  scroll-behavior: smooth;    
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+/* Убираем внутренние отступы */
+ul,
+ol {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+}
+
+/* Удаляем стандартные стили списков*/
+ul {
+  list-style: none;
+}
+
+/* Убираем лишние стили ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Общие стили картинок */
+img {
+  width: 100%;
+  height: 100%;  
+  display: block;
+  object-fit: cover;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: calc(100vw - 40px);
+  max-width: 480px;
+  
+  @include mq(tablet) {
+    width: calc(100vw - 140px);
+    max-width: 900px;
+  }
+  @include mq(desktop) {
+    max-width: 1280px;
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden;
+  @include mq(desktop) {
+    padding-right: 17px;
+  }
+}

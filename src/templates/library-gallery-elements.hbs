@@ -1,0 +1,43 @@
+{{#each this}}
+ <div class="gallery__item film-card" data-film-id="{{id}}">
+      <div class="film-card__picture">
+         {{#if poster_path}}
+                <img 
+                  srcset="
+                    https://www.themoviedb.org/t/p/w600_and_h900_bestv2/{{poster_path}}    1x,
+                    https://www.themoviedb.org/t/p/original/{{poster_path}} 2x
+                  "
+                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/{{poster_path}}"
+            onerror="this.onerror=null;this.src='https://subscribenow.com.au/time/asia/Solo/Content/Images/noCover.gif'" loading="lazy"
+                  alt="Аватарка"
+                  width="450"
+                />
+          {{else}}
+          <img src="https://i.pinimg.com/originals/74/3d/b2/743db230d891b47c1d8c66b161111b91.jpg" loading="lazy" alt="{{title}}"
+            title="{{title}}" data-id="{{id}}" />
+          {{/if}}    
+      </div>
+      <div class="film-card__list">
+        {{#if original_title}}
+        <h2 class="film-card__title">{{original_title}}</h2>
+        {{/if}}
+        {{#unless original_title}}
+        <h2 class="film-card__title">{{original_name}}</h2>
+        {{/unless}}
+        <div class="film-card__info-wrapper">
+          <ul class="film-card__ganres">
+            {{#if genres}}
+            {{#each genres}}
+             <li class="film-card__ganre"><a href="" class="film-card__text">{{this}}{{#unless @last}}, &nbsp{{/unless}}</a></li>
+            {{/each}}
+            {{else}} <li class="film-card__ganre film-card__text">N/A</li>
+            {{/if}}
+          </ul>
+           <p class="film-card__year">
+            <span>{{release_date}}</span>
+            <div class="film-card__rating">{{vote_average}}</div>
+        </div>
+      </div>        
+    </div>
+    {{/each}}
+    

@@ -1,0 +1,22 @@
+// Импорт Миксинов
+@import './utils/mixins';
+// Импорт общх стилей
+@import './utils/comon-styles';
+// Импорт переменных
+@import './utils/variables';
+// Импорт для спинера загрузки
+@import './components/loading';
+// Импорт стилей хедера
+@import './components/header';
+// стили главной секции
+@import './components/main';
+// Импорт стилей элементов галереи
+@import './components/gallery-elements';
+// Импорт стилей футера
+@import './components/footer';
+// Импорт стилей кнопки прокрутки
+@import './components/scrollUpBtn';
+// Импорт стилей модального окна
+@import './components/modal';
+// Импорт стилей пагінації
+@import './components/pagination';
